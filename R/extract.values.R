@@ -14,7 +14,7 @@ if (!require(parallel)) install.packages('parallel')
 if (!require(doParallel)) install.packages('doParallel')
 if (!require(foreach)) install.packages('foreach')
 if (!require(sp)) install.packages('sp')
-if (!require(rgal)) install.packages('rgdal')
+if (!require(rgdal)) install.packages('rgdal')
 if (!require(lubridate)) install.packages('lubridate')
 if (!require(ggplot2)) install.packages('ggplot2')
 
