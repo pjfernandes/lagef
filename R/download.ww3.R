@@ -11,7 +11,7 @@ download.ww3<-function(var="hs",anos,meses,dir=getwd()) {
 
 if (!require(raster)) install.packages('raster')
 if (!require(sp)) install.packages('sp')
-if (!require(rgal)) install.packages('rgdal')
+if (!require(rgdal)) install.packages('rgdal')
 require(raster)
 require(sp)
 require(rgdal)
