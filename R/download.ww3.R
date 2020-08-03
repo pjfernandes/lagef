@@ -40,8 +40,10 @@ meses<-meses2 #VETOR FINAL COM OS MESES
 for (ano in anos) {
 
   for (mes in meses)  {
-    url<-paste0("ftp://ftp.nodc.noaa.gov/pub/data.nodc/ncep/nww3/",ano,"/",mes,"/","glo_30m/")
+    url<-paste0("ftp://polar.ncep.noaa.gov/pub/history/waves/multi_1/",ano,mes,"/gribs/")
+    #url<-paste0("ftp://ftp.nodc.noaa.gov/pub/data.nodc/ncep/nww3/",ano,"/",mes,"/","glo_30m/")
     arquivo<-paste0("multi_1.glo_30m.",var,".",ano,mes,".grb2")
+    #arquivo<-paste0("multi_1.glo_30m.",var,".",ano,mes,".grb2")
     print(paste0("-----Baixando-----  ",url,arquivo))
     tryCatch({
       download.file(paste0(url,arquivo),arquivo,mode="wb")
